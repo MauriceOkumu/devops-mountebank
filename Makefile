@@ -1,7 +1,7 @@
 SHELL := /bin/bash
 MAKE_FILE := $(lastword $(MAKEFILE_LIST))
 NAME = mountebank-devops
-L = chmod 755 ./mockit.sh ./runmock.sh
+L = chmod 755 ./mockit.sh ./runmock.sh ./stopmock.sh
 .PHONY: help
 
 help: ## run this command for help with the different commands
