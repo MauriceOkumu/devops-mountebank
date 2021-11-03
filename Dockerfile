@@ -6,6 +6,8 @@ COPY package*.json ./
 
 RUN npm install
 
+RUN apk add --update curl -q
+
 COPY . .
 
 EXPOSE 5000
